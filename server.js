@@ -19,10 +19,10 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // Routes for user
-app.use('/api/v1/users', require('./routes/userRoute'));
+app.use('/users', require('./routes/userRoute'));
 
 // Transaction routes
-app.use('/api/v1/transections', require("./routes/transectionRoutes"));
+app.use('/transections', require("./routes/transectionRoutes"));
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

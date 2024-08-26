@@ -4,9 +4,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +12,6 @@
   "description": "",
   "dependencies": {
     "colors": "^1.4.0",
-    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",

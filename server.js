@@ -24,7 +24,11 @@ app.use('/api/v1/users', require('./routes/userRoute'));
 // Transaction routes
 app.use('/api/v1/transections', require("./routes/transectionRoutes"));
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
 // Start the server
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
+
